@@ -1,0 +1,7 @@
+app_name = "Hello world!"
+database_url = "sqlite:app.db"
+
+[python]
+venv_path = "venv"
+requirements_file = "requirements.txt"
+python_exe = "python3"
