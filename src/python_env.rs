@@ -145,8 +145,6 @@ impl PythonEnv {
         let current_dir = current_dir().context("Failed to get current directory")?;
         let abs_python_exe = current_dir.join(&self.python_exe);
 
-        println!("Executing: {} {:?} from directory: {}", abs_python_exe.display(), &cmd_args, working_dir);
-        println!("Working dir exists: {}", Path::new(working_dir).exists());
         
         let output = Command::new(&abs_python_exe)
             .args(&cmd_args)
